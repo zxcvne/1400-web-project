@@ -31,3 +31,4 @@
 ### 스택 : 
 - figma
 - spring boot + (JPA or MyBatis)
+- mariaDB
