@@ -29,6 +29,7 @@
 - 팔로우 기능 + 메시지 기능
 
 ### 스택 : 
-- figma
+- figma, git
 - spring boot + (JPA or MyBatis)
-- mariaDB
+- mariaDB or mySql
+
