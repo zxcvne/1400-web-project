@@ -60,12 +60,12 @@ www.community.demo
 
 ## 라이브러리
 
-Spring Boot Devtools
-Lombok
-Spring Configuration Processor
-Spring Web
-Thymeleaf
-MySql Driver
-Spring Data JPA
-log4jdbc
-thymeleaf-layout
+* Spring Boot Devtools
+* Lombok
+* Spring Configuration Processor
+* Spring Web
+* Thymeleaf
+* MySql Driver
+* Spring Data JPA
+* log4jdbc
+* thymeleaf-layout
