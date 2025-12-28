@@ -40,7 +40,7 @@
 ## 💻 개발 환경
 - open jdk 17.0.17
 - Spring Boot 3.5.9
-- MySQL 8.x
+- MySQL 8.4.6
 - Gradle
 - Linux
 
