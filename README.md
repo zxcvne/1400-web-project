@@ -77,6 +77,7 @@ www.community.demo
 * Spring Data JPA
 * log4jdbc
 * thymeleaf-layout
+* Thumbnailator
 
 ## Test DB
 
