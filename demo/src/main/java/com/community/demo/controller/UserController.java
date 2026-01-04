@@ -21,7 +21,6 @@ public class UserController {
     @GetMapping("/join")
     public void join() {}
 
-
     @GetMapping("/login")
     public void login(HttpServletRequest request,
                       Model model){
@@ -40,7 +39,7 @@ public class UserController {
     public String join(UserDTO userDTO){
         String email = userService.register(userDTO);
         log.info(">>> email >> {}", email);
-        return "index";
+        return "redirect:/";
     }
 
 }

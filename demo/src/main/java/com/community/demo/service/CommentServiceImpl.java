@@ -25,7 +25,6 @@ public class CommentServiceImpl implements CommentService {
     private final CommentRepository commentRepository;
     private final BoardRepository boardRepository;
 
-
     @Override
     public long post(CommentDTO commentDTO) {
         // 저장 대상은 Entity CommentDTO => Entity로 변환
