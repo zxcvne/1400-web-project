@@ -41,6 +41,6 @@ public class LoginSuccessHandler implements AuthenticationSuccessHandler {
 
         SavedRequest savedRequest = requestCache.getRequest(request, response);
         redirectStrategy.sendRedirect(request, response,
-                savedRequest != null ? savedRequest.getRedirectUrl(): "/board/list");
+                savedRequest != null ? savedRequest.getRedirectUrl(): "/");
     }
 }

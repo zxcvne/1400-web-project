@@ -57,7 +57,7 @@
                         <a class="nav-link active" aria-current="page" th:href="@{/user/join}">
                             <button type="button" class="btn btn-secondary">SignUp</button></a>
                     </li>
-                    <!-- chat -->
+                    <!-- 채팅 -->
                     <li class="nav-item" sec:authorize="isAuthenticated()">
                         <a class="nav-link" th:href="@{/}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
@@ -66,7 +66,7 @@
                             </svg>
                         </a>
                     </li>
-                    <!-- register -->
+                    <!-- 글쓰기 -->
                     <li class="nav-item" sec:authorize="isAuthenticated()">
                         <a class="nav-link active" aria-current="page" th:href="@{/board/register}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-plus" viewBox="0 0 16 16">
@@ -90,8 +90,18 @@
                     <li class="nav-item" sec:authorize="hasAnyAuthority('ROLE_ADMIN')">
                         <a class="nav-link" th:href="@{/user/list}">UserList</a>
                     </li>
+                    <li class="nav-item" sec:authorize="isAuthenticated()">
+                        <a class="nav-link" id="logout" href="">Logout</a>
+                        <form action="/user/logout" method="post" id="logoutForm"></form>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <script>
+        document.getElementById("logout").addEventListener('click',(e)=>{
+            e.preventDefault();
+            document.getElementById('logoutForm').submit();
+        });
+    </script>
 </div>
