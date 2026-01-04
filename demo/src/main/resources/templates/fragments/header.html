@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
 <div th:fragment="header">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" th:href="@{/}">
-                <!-- 로고 SVG -->
+                <!-- 로고1 -->
 <!--                <svg width="32" height="32" viewBox="0 0 32 32" class="me-2">-->
 <!--                    &lt;!&ndash; 메인 캐릭터 머리 &ndash;&gt;-->
 <!--                    <circle cx="16" cy="16" r="12" fill="#4A90E2"/>-->
@@ -19,7 +21,7 @@
 <!--                    <circle cx="6" cy="12" r="3" fill="#5BA3F5"/>-->
 <!--                    <circle cx="26" cy="12" r="3" fill="#5BA3F5"/>-->
 <!--                </svg>-->
-                <!-- logo2 -->
+                <!-- 로고2 -->
                 <svg width="32" height="32" viewBox="0 0 32 32" class="me-2">
                     <rect x="4" y="6" width="24" height="18" rx="4" fill="#4A90E2"/>
                     <path d="M 10 24 L 8 28 L 12 24 Z" fill="#4A90E2"/>
@@ -46,8 +48,16 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                 </form>
                 <ul class="navbar-nav flex-grow-1 justify-content-end">
-                    <!-- chat -->
                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" th:href="@{/}">
+                            <button type="button" class="btn btn-secondary">Login</button></a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link active" aria-current="page" th:href="@{/}">
+                            <button type="button" class="btn btn-secondary">SignUp</button></a>
+                    </li>
+                    <!-- chat -->
+                    <li class="nav-item" >
                         <a class="nav-link" th:href="@{/}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
                                 <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
@@ -56,7 +66,7 @@
                         </a>
                     </li>
                     <!-- register -->
-                    <li class="nav-item">
+                    <li class="nav-item" >
                         <a class="nav-link active" aria-current="page" th:href="@{/board/register}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-plus" viewBox="0 0 16 16">
                                 <path d="M8.5 6a.5.5 0 0 0-1 0v1.5H6a.5.5 0 0 0 0 1h1.5V10a.5.5 0 0 0 1 0V8.5H10a.5.5 0 0 0 0-1H8.5z"/>
@@ -66,22 +76,19 @@
                         </a>
                     </li>
                     <!-- 알림 -->
-                    <li class="nav-item">
+                    <li class="nav-item" >
                         <a class="nav-link" th:href="@{/}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
                                 <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
                             </svg>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" th:href="@{/}">
-                            <button type="button" class="btn btn-secondary">Login</button></a>
+                    <li class="nav-item" >
+                        <a class="nav-link" th:href="@{/user/modify}">[[${#authentication.name}]]</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" th:href="@{/}">
-                            <button type="button" class="btn btn-secondary">SignUp</button></a>
+                    <li class="nav-item" >
+                        <a class="nav-link" th:href="@{/user/list}">UserList</a>
                     </li>
-
                 </ul>
             </div>
         </div>

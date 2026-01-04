@@ -27,14 +27,14 @@ public class SecurityConfig {
     @Bean
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
-                //.csrf(csrf -> csrf.disable()) // 완성 후 풀기
+                .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers("/user/list").hasAnyRole("ADMIN")
-                        .requestMatchers("/","/dist/**", "/js/**","/image/**", "/upload/**",
-                                "/board/detail", "/comment/list/**",
-                                "/user/join","/user/login","/error/**"
-                        ).permitAll()
-                        .anyRequest().authenticated()
+//                        .requestMatchers("/","/dist/**", "/js/**","/image/**", "/upload/**",
+//                                "/board/detail", "/comment/list/**",
+//                                "/user/join","/user/login","/error/**"
+//                        ).permitAll()
+                        .anyRequest().permitAll()
                 )
                 .formLogin(login -> login
                         .usernameParameter("email")

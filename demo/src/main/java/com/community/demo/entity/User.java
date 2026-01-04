@@ -29,7 +29,6 @@ public class User extends TimeBase{
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<AuthUser> authList = new ArrayList<>();
 
-    // 편의 메서드
     public void addAuth(AuthRole role){
         if(this.authList == null){
             this.authList = new ArrayList<>();

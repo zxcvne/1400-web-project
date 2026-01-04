@@ -5,5 +5,19 @@
       layout:decorate="~{layout/layout}">
 
 <div layout:fragment="content" class="container-md">
-    <span>Spring boot_JPA Project</span>
+    <h1> Login Page </h1>
+    <form action="/user/login" method="post">
+        <div class="mb-3">
+            <label for="e" class="form-label">email</label>
+            <input type="text" class="form-control" name="email" id="e" placeholder="test@test.com">
+        </div>
+        <div class="mb-3">
+            <label for="p" class="form-label">pwd</label>
+            <input type="password" class="form-control" name="pwd" id="p" placeholder="password...">
+        </div>
+        <div class="text-danger m-2" th:if="${errMsg ne null}">
+            [[${errMsg}]] / [[${email}]]
+        </div>
+        <button type="submit" class="btn btn-primary">login</button>
+    </form>
 </div>

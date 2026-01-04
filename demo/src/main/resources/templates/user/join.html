@@ -5,5 +5,20 @@
       layout:decorate="~{layout/layout}">
 
 <div layout:fragment="content" class="container-md">
-    <span>Spring boot_JPA Project</span>
+    <h1> Join Page </h1>
+    <form action="/user/join" method="post">s
+        <div class="mb-3">
+            <label for="e" class="form-label">email</label>
+            <input type="text" class="form-control" name="email" id="e" placeholder="test@test.com">
+        </div>
+        <div class="mb-3">
+            <label for="p" class="form-label">pwd</label>
+            <input type="password" class="form-control" name="pwd" id="p" placeholder="password...">
+        </div>
+        <div class="mb-3">
+            <label for="n" class="form-label">nick_name</label>
+            <input type="text" class="form-control" name="nickName" id="n" placeholder="nickName...">
+        </div>
+        <button type="submit" class="btn btn-primary">join</button>
+    </form>
 </div>
