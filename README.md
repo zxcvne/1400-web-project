@@ -1,4 +1,4 @@
-# 🌐 WEB PROJECT 
+# 🌐 Social Web Project 
 ---
 
 Notion : https://www.notion.so/forum-project-2de9b47f69c5806b95b5d81941a10bb4?source=copy_link
@@ -7,8 +7,8 @@ Notion : https://www.notion.so/forum-project-2de9b47f69c5806b95b5d81941a10bb4?so
 
 ## 📖 프로젝트 소개
 💡 **Only open source available** <br />
-실명제 기반의 신뢰도 높은 커뮤니티 플랫폼입니다.
-기존 익명 커뮤니티의 문제점을 해결하고자 실명제와 광고 없는 환경을 제공합니다.
+Spring Boot 기반의 신뢰도 높은 커뮤니티 플랫폼입니다.
+기존 커뮤니티의 문제점을 해결하고자 광고 없는 쾌적한 환경을 제공합니다.
 
 
 **사이트 주제** :
