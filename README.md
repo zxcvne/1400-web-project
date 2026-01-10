@@ -20,17 +20,7 @@ Spring Boot 기반의 신뢰도 높은 커뮤니티 플랫폼입니다.
 - [ ] 온라인 교육 플랫폼
 
 
-
-**참고 플랫폼** 
-
-* reddit : https://www.reddit.com/ 
-* stack overflow : https://stackoverflow.com/
-* dcinside : https://www.dcinside.com/
-* 번개장터 : https://m.bunjang.co.kr/
-* velog : https://velog.io/
-  <br /><br />등 커뮤니티 웹 사이트 참고
-
-**사이트 이름** : Nexus
+**사이트 이름** : Nexus(1차)
 
 기존 유사 사이트에 비해 다른 점 : 
 * 닉네임 사용 불가능(실명제)
