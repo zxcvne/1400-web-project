@@ -10,6 +10,77 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
+/*.nexus-logo-img {*/
+/*    !* 화면에 보여줄 크기 설정 *!*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+
+/*    !* 이미지 품질 최적화 속성 *!*/
+/*    object-fit: contain;*/
+/*    image-rendering: -webkit-optimize-contrast; !* 브라우저 렌더링 선명도 향상 *!*/
+/*    transform: translateZ(0); !* 하드웨어 가속 사용 *!*/
+/*}*/
+
+.nexus-brand-text {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  /* 업로드하신 로고 느낌의 그라데이션 적용 */
+  background: linear-gradient(135deg, #4da9ff, #9d56ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+
+
+  /* 1. 헤더 높이 증가 */
+.sb-topnav.navbar {
+  height: 70px; /* 기본 약 56px에서 70px로 증가 */
+  padding: 0 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 약간의 그림자로 고급스러움 추가 */
+}
+
+/* 2. 3구역 분할 정렬 (정가운데 배치의 핵심) */
+.header-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header-left, .header-right {
+  flex: 1; /* 왼쪽과 오른쪽이 동일한 공간을 차지 */
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  justify-content: flex-end; /* 오른쪽 메뉴는 오른쪽 끝으로 */
+}
+
+.header-center {
+  flex: 2; /* 중앙 검색창 구역을 더 넓게 설정 */
+  display: flex;
+  justify-content: center; /* 내부 요소를 정가운데로 */
+}
+
+/* 검색창 스타일 미세 조정 */
+.custom-search-group {
+  width: 100%;
+  max-width: 450px; /* 검색창 최대 너비 제한 */
+}
+
+.nexus-brand-text {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  background: linear-gradient(90deg, #4DA9FF, #9D56FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;

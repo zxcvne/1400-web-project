@@ -30,7 +30,7 @@ Notion : https://www.notion.so/forum-project-2de9b47f69c5806b95b5d81941a10bb4?so
 * velog : https://velog.io/
   <br /><br />등 커뮤니티 웹 사이트 참고
 
-**사이트 이름** : CF-P
+**사이트 이름** : Nexus
 
 기존 유사 사이트에 비해 다른 점 : 
 * 닉네임 사용 불가능(실명제)
