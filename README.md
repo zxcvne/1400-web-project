@@ -6,6 +6,7 @@ Notion : https://www.notion.so/forum-project-2de9b47f69c5806b95b5d81941a10bb4?so
 ---
 
 ## 📖 프로젝트 소개
+
 💡 **Only open source available** <br />
 Spring Boot 기반의 신뢰도 높은 커뮤니티 플랫폼입니다.
 기존 커뮤니티의 문제점을 해결하고자 광고 없는 쾌적한 환경을 제공합니다.
@@ -19,11 +20,9 @@ Spring Boot 기반의 신뢰도 높은 커뮤니티 플랫폼입니다.
 - [x] 커뮤니티 & 포럼 플랫폼 
 - [ ] 온라인 교육 플랫폼
 
-
 **사이트 이름** : Nexus(1차)
 
 기존 유사 사이트에 비해 다른 점 : 
-* 닉네임 사용 불가능(실명제)
 * 광고X
 
 사이트가 제공하는 기능 : 
@@ -37,31 +36,7 @@ Spring Boot 기반의 신뢰도 높은 커뮤니티 플랫폼입니다.
 - MySQL 8.4.6
 - Gradle
 
-### 사용한 탬플릿 : 
-* https://bootstrapthemes.co/items/free-bootstrap-templates/
-* https://startbootstrap.com/themes
-* https://www.creative-tim.com/bootstrap-themes/free
-
-
-## 📁필수 템플릿
-<pre>
-www.community.demo
-├── board
-│   └── detail
-├── fragments
-│   ├── footer
-│   └── header
-├── index
-├── layout
-│   └── layout
-└── user
-    ├── login
-    └── signup
-</pre>
-
-
-## 라이브러리
-
+## dependencies
 * Spring Boot Devtools
 * Lombok
 * Spring Configuration Processor
@@ -86,6 +61,8 @@ flush privileges;
 
 ```
 
-페이지네이션 
-오프셋 기반 -> 커서 기반
 
+## 추가된 기능
+- [ ] 페이지네이션 오프셋 기반 -> 커서 기반
+- [x] oauth2.0
+- [ ] 웹소켓 통신
